@@ -19,7 +19,7 @@ public class FlightWritableComparable implements WritableComparable {
         this.dectairip = dectairip;
     }
 
-    public int get_dectairip() {
+    public long get_dectairip() {
         return dectairip;
     }
 
