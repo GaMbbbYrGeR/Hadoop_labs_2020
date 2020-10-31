@@ -37,6 +37,9 @@ public class FlightWritableComparable implements WritableComparable {
         if (this.dectairip > is_dectairip) {
             return 1;
         }
+        if (this.dectairip < is_dectairip) {
+            return -1;
+        }
     }
 
     public int hashCode() {
