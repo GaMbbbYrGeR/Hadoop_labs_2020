@@ -4,9 +4,9 @@ import org.apache.hadoop.io.RawComparator;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
-public class FlightGroupingComparator implements WritableComparator {
+public class FlightGroupingComparator extends WritableComparator {
 
-    public GroupingComparator() {
+    public FlightGroupingComparator() {
         super(FlightWritableComparable.class, true);
     }
 
@@ -14,6 +14,6 @@ public class FlightGroupingComparator implements WritableComparator {
         FlightWritableComparable x = (FlightWritableComparable) x1;
         FlightWritableComparable y = (FlightWritableComparable) y1;
 
-        return x1.get_dectairip().compareTo(y1.get_dectairip());
+        return x1.compareTo(y1);
     }
 }
