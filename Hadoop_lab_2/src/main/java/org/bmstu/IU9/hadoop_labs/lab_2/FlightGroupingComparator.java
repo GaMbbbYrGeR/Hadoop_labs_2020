@@ -29,6 +29,8 @@ public class FlightGroupingComparator extends WritableComparator {
             }
         }
 
+        System.out.println(x1.get_dextairip());
+
         return 0;
     }
 }
