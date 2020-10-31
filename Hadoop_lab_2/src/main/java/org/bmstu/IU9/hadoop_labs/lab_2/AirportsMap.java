@@ -14,7 +14,8 @@ public class AirportsMap extends Mapper<LongWritable, Text, FlightWritableCompar
         if(Float.parseFloat(str[19]) != (float)1 && !str[0].equals("YEAR")) {
             if(Float.parseFloat(str[18]) != (float)0) {
                 FlightWritableComparable flight = new FlightWritableComparable();
-                flight.set_flag(1);
+
+                
             }
         }
     }
