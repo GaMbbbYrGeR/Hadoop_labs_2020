@@ -47,6 +47,8 @@ public class FlightWritableComparable implements WritableComparable {
         if (this.flag < is_flag) {
             return -1;
         }
+
+        return 0;
     }
 
     public int hashCode() {
