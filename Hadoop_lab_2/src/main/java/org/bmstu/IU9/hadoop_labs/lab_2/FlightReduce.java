@@ -16,19 +16,26 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
         Text name = new Text(iter.next()):
         float min = -1;
         float max = Float.MAX_VALUE;
-        float midl = -1;
+        float midl = 0;
+        long count = 0;
+
         while (iter.hasNext()){
             Text number = iter.next();
             float id = Float.parseFloat(number.toString());
-            if (min > id){
+            if (min > id) {
                 min = id ;
             }
-            if  ( max < id){
+            if  ( max < id) {
                 max = id ;
             }
+            count++;
+            midl += id;
 
 
         }
+        midl = midl / count;
+
+        context.write (new Text(Integer.toString(key.get_dectairip())), new Text("Аэропорт: " + name + ", Минимальное значение: " + min + ", Максимальное значение"))
     }
 
 
