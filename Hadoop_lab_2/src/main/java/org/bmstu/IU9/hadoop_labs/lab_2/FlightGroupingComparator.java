@@ -5,6 +5,7 @@ import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
 public class FlightGroupingComparator implements WritableComparator {
+}
 
     public int compare(FlightWritableComparable a, FlightWritableComparable b) {
         return a.compareTo(b);
