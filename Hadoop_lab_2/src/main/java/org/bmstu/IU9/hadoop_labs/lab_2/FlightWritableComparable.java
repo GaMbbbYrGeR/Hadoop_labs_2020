@@ -7,7 +7,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class FlightWritableComparable implements WritableComparable {
-    // Some data
+    
     private int flag;
     private long dectairip;
 
