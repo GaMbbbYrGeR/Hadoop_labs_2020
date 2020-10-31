@@ -1,7 +1,6 @@
 package org.bmstu.IU9.hadoop_labs.lab_2;
 
-import org.w3c.dom.Text;
-import org.apache.hadoop.mapreduce.*;
+import org.apache.hadoop.io.*;
 
 import java.nio.file.Path;
 
