@@ -5,11 +5,15 @@ import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.io.WritableComparator;
 
 public class FlightGroupingComparator implements WritableComparator {
-}
+
+    public GroupingComparator () {
+        super (FlightWritableComparable.class, true);
+    }
 
     public int compare(FlightWritableComparable a, FlightWritableComparable b) {
         return a.compareTo(b);
     }
+}
 
     public class NaturalKeyGroupingComparator extends WritableComparator {
         protected NaturalKeyGroupingComparator() {
