@@ -30,9 +30,13 @@ public class FlightWritableComparable implements WritableComparable {
     }
 
     public int compareTo(FlightWritableComparable o) {
-        int thisValue = this.value;
-        int thatValue = o.value;
-        return (thisValue < thatValue ? -1 : (thisValue==thatValue ? 0 : 1));
+        FlightWritableComparable is = (FlightWritableComparable) o;
+        int is_flag = is.flag;
+        long is_dectairip = is.dectairip;
+
+        if (this.dectairip > is_dectairip) {
+            return 1;
+        }
     }
 
     public int hashCode() {
