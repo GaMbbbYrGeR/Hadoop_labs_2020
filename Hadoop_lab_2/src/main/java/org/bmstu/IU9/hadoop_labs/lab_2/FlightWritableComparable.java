@@ -26,7 +26,7 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     public long get_dectairip() {
         return dectairip;
     }
-    
+
     public FlightWritableComparable(int flag, int dectairip) {
         this.flag = flag;
         this.dectairip = dectairip;
@@ -45,20 +45,20 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     @Override
     public int compareTo(FlightWritableComparable o) {
         FlightWritableComparable is = o;
-        int is_flag = is.flag;
-        long is_dectairip = is.dectairip;
+        int is_flag = is.get_flag();
+        long is_dectairip = is.get_dectairip();
 
-        if (this.dectairip > is_dectairip) {
+        if (this.get_dectairip() > is_dectairip) {
             return 1;
         }
-        if (this.dectairip < is_dectairip) {
+        if (this.get_dectairip() < is_dectairip) {
             return -1;
         }
 
-        if (this.flag > is_flag) {
+        if (this.get_flag() > is_flag) {
             return 1;
         }
-        if (this.flag < is_flag) {
+        if (this.get_flag() < is_flag) {
             return -1;
         }
 
