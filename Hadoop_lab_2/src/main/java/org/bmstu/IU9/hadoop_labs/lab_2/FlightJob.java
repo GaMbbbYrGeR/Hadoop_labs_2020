@@ -6,6 +6,7 @@ import org.apache.hadoop.mapreduce.*;
 import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+import org.apache.log4j.BasicConfigurator;
 
 
 public class FlightJob {
@@ -24,6 +25,7 @@ public class FlightJob {
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
         job.setNumReduceTasks(2);
+        BasicConfigurator.configure();
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
