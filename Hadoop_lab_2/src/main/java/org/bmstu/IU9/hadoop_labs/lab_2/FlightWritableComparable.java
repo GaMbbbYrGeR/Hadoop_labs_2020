@@ -12,13 +12,13 @@ public class FlightWritableComparable implements WritableComparable {
     private long dectairip;
 
     public void write(DataOutput out) throws IOException {
-        out.writeInt(counter);
-        out.writeLong(timestamp);
+        out.writeInt(flag);
+        out.writeLong(dectairip);
     }
 
     public void readFields(DataInput in) throws IOException {
-        counter = in.readInt();
-        timestamp = in.readLong();
+        flag = in.readInt();
+        dectairip = in.readLong();
     }
 
     public int compareTo(FlightWritableComparable o) {
@@ -30,8 +30,8 @@ public class FlightWritableComparable implements WritableComparable {
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + counter;
-        result = prime * result + (int) (timestamp ^ (timestamp >>> 32));
+        result = prime * result + flag;
+        result = prime * result + (int) (dectairip ^ (dectairip >>> 32));
         return result
     }
 
