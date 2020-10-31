@@ -56,7 +56,7 @@ public class FlightWritableComparable implements WritableComparable {
         int result = 1;
         result = prime * result + flag;
         result = prime * result + (int) (dectairip ^ (dectairip >>> 32));
-        return result
+        return result;
     }
 
     @Override
