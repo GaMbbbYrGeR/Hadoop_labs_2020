@@ -64,5 +64,5 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     public String toString() {
         return "[" + get_dectairip() + " " + get_flag() + "]";
     }
-    
+
 }
