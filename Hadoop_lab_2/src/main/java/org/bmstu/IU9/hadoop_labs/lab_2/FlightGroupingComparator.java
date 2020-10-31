@@ -11,7 +11,7 @@ public class FlightGroupingComparator extends WritableComparator {
     }
 
     @Override
-    public int compare(FlightWritableComparable a, FlightWritableComparable b) {
+    public int compare(WritableComparable a, WritableComparable b) {
         FlightWritableComparable x1 = (FlightWritableComparable) b;
         FlightWritableComparable y1 = (FlightWritableComparable) a;
 
