@@ -33,8 +33,9 @@ public class FlightWritableComparable implements WritableComparable {
         dectairip = in.readLong();
     }
 
+    @Override
     public int compareTo(FlightWritableComparable o) {
-        FlightWritableComparable is = (FlightWritableComparable) o;
+        FlightWritableComparable is = o;
         int is_flag = is.flag;
         long is_dectairip = is.dectairip;
 
@@ -63,8 +64,5 @@ public class FlightWritableComparable implements WritableComparable {
         return result;
     }
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
-    }
+
 }
