@@ -1,8 +1,7 @@
 package org.bmstu.IU9.hadoop_labs.lab_2;
 
 import org.apache.hadoop.io.*;
-
-import java.nio.file.Path;
+import org.apache.hadoop.mapreduce.*;
 
 public class FlightJob {
     public static void main(String[] args) throws InterruptedException, Exception, ClassNotFoundException {
