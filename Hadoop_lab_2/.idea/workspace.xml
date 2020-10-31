@@ -22,7 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3851e286-d050-418d-9494-a51af0a34718" name="Default Changelist" comment="" />
+    <list default="true" id="3851e286-d050-418d-9494-a51af0a34718" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightReduce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightReduce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightWritableComparable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightWritableComparable.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604132571694</updated>
-      <workItem from="1604132573162" duration="19197000" />
+      <workItem from="1604132573162" duration="19610000" />
     </task>
     <servers />
   </component>
@@ -132,22 +136,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="213" y="495" width="374" height="585" key="#com.intellij.ide.util.MemberChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1604135636328" />
-    <state width="1807" height="300" key="GridCell.Tab.0.bottom" timestamp="1604156172839">
+    <state width="1807" height="300" key="GridCell.Tab.0.bottom" timestamp="1604156179724">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="300" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604156172839" />
-    <state width="1807" height="300" key="GridCell.Tab.0.center" timestamp="1604156172838">
+    <state width="1807" height="300" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604156179724" />
+    <state width="1807" height="300" key="GridCell.Tab.0.center" timestamp="1604156179724">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="300" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604156172838" />
-    <state width="1807" height="300" key="GridCell.Tab.0.left" timestamp="1604156172838">
+    <state width="1807" height="300" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604156179724" />
+    <state width="1807" height="300" key="GridCell.Tab.0.left" timestamp="1604156179723">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="300" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604156172838" />
-    <state width="1807" height="300" key="GridCell.Tab.0.right" timestamp="1604156172838">
+    <state width="1807" height="300" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604156179723" />
+    <state width="1807" height="300" key="GridCell.Tab.0.right" timestamp="1604156179724">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="300" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604156172838" />
+    <state width="1807" height="300" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604156179724" />
     <state x="579" y="459" width="672" height="678" key="search.everywhere.popup" timestamp="1604139397344">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

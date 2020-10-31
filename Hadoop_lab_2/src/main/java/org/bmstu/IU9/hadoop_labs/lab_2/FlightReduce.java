@@ -16,6 +16,7 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
         float min = Float.MAX_VALUE;
         float midl = 0;
         long count = 0;
+        System.out.println(name.toString());
 
         while (iter.hasNext()){
             Text number = iter.next();
