@@ -14,6 +14,14 @@ public class FlightGroupingComparator extends WritableComparator {
         FlightWritableComparable x = (FlightWritableComparable) x1;
         FlightWritableComparable y = (FlightWritableComparable) y1;
 
-        return x1.compareTo(y1);
+        if(x1.get_dectairip() > y1.get_dectairip()) {
+            return 1;
+        } else {
+            if (x1.get_dectairip() < y1.get_dectairip()) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
     }
 }
