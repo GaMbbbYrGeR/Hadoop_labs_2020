@@ -34,7 +34,7 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
         }
         midl = midl / count;
 
-        context.write (new Text(Integer.toString(key.get_dectairip())), new Text("Аэропорт: " + name + ", Минимальное значение: " + min + ", Максимальное значение: " + max + ", Среднее значение: " + midl));
+        context.write (new Text(Integer.toString(key.getDestAirID())), new Text("Аэропорт: " + name + ", Минимальное значение: " + min + ", Максимальное значение: " + max + ", Среднее значение: " + midl));
     }
 
 }
