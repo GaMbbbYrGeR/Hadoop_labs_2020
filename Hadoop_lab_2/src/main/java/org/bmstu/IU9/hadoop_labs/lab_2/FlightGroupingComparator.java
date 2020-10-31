@@ -28,5 +28,7 @@ public class FlightGroupingComparator extends WritableComparator {
                 return 0;
             }
         }
+
+        return 0;
     }
 }
