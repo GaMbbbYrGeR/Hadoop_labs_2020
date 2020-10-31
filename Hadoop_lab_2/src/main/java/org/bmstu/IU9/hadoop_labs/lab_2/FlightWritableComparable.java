@@ -53,7 +53,6 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
         if (this.get_flag() < is_flag) {
             return -1;
         }
-
         return 0;
     }
 
@@ -65,6 +64,5 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     public String toString() {
         return "[" + get_dectairip() + " " + get_flag() + "]";
     }
-
-
+    
 }
