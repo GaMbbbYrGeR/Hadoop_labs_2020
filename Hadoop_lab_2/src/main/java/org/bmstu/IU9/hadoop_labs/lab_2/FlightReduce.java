@@ -1,7 +1,5 @@
 package org.bmstu.IU9.hadoop_labs.lab_2;
 
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
@@ -14,8 +12,8 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
 
         Iterator <Text> iter =  values.iterator();
         Text name = new Text(iter.next());
-        float min = -1;
-        float max = Float.MAX_VALUE;
+        float max = -1;
+        float min = Float.MAX_VALUE;
         float midl = 0;
         long count = 0;
 
@@ -25,12 +23,12 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
             if (min > id) {
                 min = id ;
             }
-            if  ( max < id) {
+            if (max < id) {
                 max = id ;
             }
+
             count++;
             midl += id;
-
 
         }
         midl = midl / count;
