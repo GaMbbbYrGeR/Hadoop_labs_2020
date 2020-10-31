@@ -19,8 +19,8 @@ public class FlightWritableComparable implements WritableComparable {
         this.dectairip = dectairip;
     }
 
-    public void get_dectairip() {
-        return this.dectairip;
+    public int get_dectairip() {
+        return dectairip;
     }
 
     public void write(DataOutput out) throws IOException {
