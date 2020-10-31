@@ -11,14 +11,6 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     private int flag;
     private long dectairip;
 
-    public void set_flag(int flag) {
-        this.flag = flag;
-    }
-
-    public void set_dectairip(int dectairip) {
-        this.dectairip = dectairip;
-    }
-
     public int get_flag() {
         return flag;
     }
