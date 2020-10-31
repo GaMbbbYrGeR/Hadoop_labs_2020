@@ -37,18 +37,5 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
 
         context.write (new Text(Integer.toString(key.get_dectairip())), new Text("Аэропорт: " + name + ", Минимальное значение: " + min + ", Максимальное значение: " + max + ", Среднее значение: " + midl));
     }
-
-
-
-    @Override
-    protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-
-        long count = 0;
-        Iterator iter =  values.iterator();
-        while (iter.hasNext()) {
-            iter.next();
-            count++;
-        }
-        context.write ( key, new LongWritable ( count));
-    }
+    
 }
