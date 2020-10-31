@@ -11,24 +11,21 @@ public class FlightGroupingComparator extends WritableComparator {
     }
 
     @Override
-    public int compare(WritableComparable a, WritableComparable b) {
-        return super.compare(a, b);
+    public int compare(WritableComparable x, WritableComparable y) {
+        return super.compare(x, y);
     }
 
     public int compare(FlightWritableComparable a, FlightWritableComparable b) {
         FlightWritableComparable x = (FlightWritableComparable) x1;
         FlightWritableComparable y = (FlightWritableComparable) y1;
 
-        System.out.println(x1.get_dextairip());
+        System.out.println(x.toString());
 
         if(x1.get_dectairip() > y1.get_dectairip()) {
             return 1;
-        } else {
-            if (x1.get_dectairip() < y1.get_dectairip()) {
-                return -1;
-            } else {
-                return 0;
-            }
+        }
+        if (x1.get_dectairip() < y1.get_dectairip()) {
+            return -1;
         }
 
         return 0;
