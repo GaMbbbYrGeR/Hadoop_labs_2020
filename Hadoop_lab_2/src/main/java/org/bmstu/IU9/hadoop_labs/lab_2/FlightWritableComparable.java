@@ -42,7 +42,7 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     public int compareTo(FlightWritableComparable o) {
         FlightWritableComparable is = o;
         int isFlag = is.getFlag();
-        long isDestAirID = is.getDestAirID();
+        int isDestAirID = is.getDestAirID();
 
         if (this.getDestAirID() > isDestAirID) {
             return 1;
