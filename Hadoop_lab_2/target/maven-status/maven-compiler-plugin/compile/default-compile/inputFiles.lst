@@ -1,0 +1,7 @@
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightWritableComparable.java
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightJob.java
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightReduce.java
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightGroupingComparator.java
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightsMap.java
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/FlightPartition.java
+/home/kirill/IdeaProjects/Hadoop_labs_2020/Hadoop_lab_2/src/main/java/org/bmstu/IU9/hadoop_labs/lab_2/AirportsMap.java
