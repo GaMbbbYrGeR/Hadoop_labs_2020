@@ -20,6 +20,8 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     }
 
     public FlightWritableComparable() {
+        this.flag = 0;
+        this.dectairip = 0;
     }
 
     public FlightWritableComparable(int flag, int dectairip) {
