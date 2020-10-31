@@ -9,11 +9,11 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 
 public class FlightJob {
-    public static void main(String[] args) throws InterruptedException, Exception, ClassNotFoundException {
+    public static void main(String[] args) throws Exception {
 
         Job job = Job.getInstance();
         job.setJarByClass(FlightJob.class);
-        job.setJobName("JoinJob sort");
+        job.setJobName("Join sort");
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, AirportsMap.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, FlightsMap.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
