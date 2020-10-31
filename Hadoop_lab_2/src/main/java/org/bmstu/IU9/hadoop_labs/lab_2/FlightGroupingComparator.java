@@ -6,25 +6,14 @@ import org.apache.hadoop.io.WritableComparator;
 
 public class FlightGroupingComparator implements WritableComparator {
 
-    public GroupingComparator () {
-        super (FlightWritableComparable.class, true);
+    public GroupingComparator() {
+        super(FlightWritableComparable.class, true);
     }
 
     public int compare(FlightWritableComparable a, FlightWritableComparable b) {
-        return a.compareTo(b);
+        FlightWritableComparable x = (FlightWritableComparable) x1;
+        FlightWritableComparable y = (FlightWritableComparable) y1;
+
+        return x1.get_dectairip().compareTo(y1.get_dectairip());
     }
-}
-
-    public class NaturalKeyGroupingComparator extends WritableComparator {
-        protected NaturalKeyGroupingComparator() {
-            super(StockKey.class, true);
-        }
-        @SuppressWarnings("rawtypes")
-        @Override
-        public int compare(WritableComparable w1, WritableComparable w2) {
-            StockKey k1 = (StockKey)w1;
-            StockKey k2 = (StockKey)w2;
-
-            return k1.getSymbol().compareTo(k2.getSymbol());
-        }
 }
