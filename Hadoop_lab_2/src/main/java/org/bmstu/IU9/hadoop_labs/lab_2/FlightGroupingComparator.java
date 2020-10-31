@@ -1,8 +1,10 @@
 package org.bmstu.IU9.hadoop_labs.lab_2;
 
 import org.apache.hadoop.io.RawComparator;
+import org.apache.hadoop.io.WritableComparable;
+import org.apache.hadoop.io.WritableComparator;
 
-public class FlightGroupingComparator implements RawComparator {
+public class FlightGroupingComparator implements WritableComparator {
 
     public int compare(FlightWritableComparable a, FlightWritableComparable b) {
         return a.compareTo(b);
