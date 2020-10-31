@@ -9,13 +9,13 @@ import java.io.IOException;
 public class FlightWritableComparable implements WritableComparable<FlightWritableComparable> {
 
     private int flag;
-    private long dectairip;
+    private int dectairip;
 
     public int get_flag() {
         return flag;
     }
 
-    public long get_dectairip() {
+    public int get_dectairip() {
         return dectairip;
     }
 
@@ -31,7 +31,7 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
 
     public void readFields(DataInput in) throws IOException {
         flag = in.readInt();
-        dectairip = in.readLong();
+        dectairip = in.readInt();
     }
 
     @Override
@@ -58,11 +58,7 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
     }
 
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + flag;
-        result = prime * result + (int) (dectairip ^ (dectairip >>> 32));
-        return result;
+        return this.get_dectairip();
     }
 
 
