@@ -12,7 +12,7 @@ public class FlightJob {
     public static void main(String[] args) throws InterruptedException, Exception, ClassNotFoundException {
 
         Job job = Job.getInstance();
-        job.setJarByClass(JoiJob.class);
+        job.setJarByClass(FlightJob.class);
         job.setJobName("JoinJob sort");
         MultipleInputs.addInputPath(job, new Path(args[0]), TextInputFormat.class, CallsJoinMapper.class);
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, SystemsJoinMapper.class);
