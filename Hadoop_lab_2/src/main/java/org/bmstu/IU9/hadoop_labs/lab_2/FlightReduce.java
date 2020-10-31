@@ -10,6 +10,13 @@ import java.util.Iterator;
 
 public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, Text> {
     @Override
+    protected void reduce(FlightWritableComparable key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+        
+    }
+
+
+
+    @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
 
         long count = 0;
