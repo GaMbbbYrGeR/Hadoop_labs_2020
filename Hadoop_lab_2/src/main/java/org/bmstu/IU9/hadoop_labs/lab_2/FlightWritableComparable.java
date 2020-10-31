@@ -8,11 +8,11 @@ import java.io.IOException;
 
 public class FlightWritableComparable implements WritableComparable<FlightWritableComparable> {
 
-    private int flag;
+    private int flightFlag;
     private int destAirID;
 
     public int getFlag() {
-        return flag;
+        return flightFlag;
     }
 
     public int getDestAirID() {
@@ -24,17 +24,17 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
 
     public FlightWritableComparable(int flag, int destAirID) {
         super();
-        this.flag = flag;
+        this.flightFlag = flag;
         this.destAirID = destAirID;
     }
 
     public void write(DataOutput out) throws IOException {
-        out.writeInt(flag);
+        out.writeInt(flightFlag);
         out.writeInt(destAirID);
     }
 
     public void readFields(DataInput in) throws IOException {
-        flag = in.readInt();
+        flightFlag = in.readInt();
         destAirID = in.readInt();
     }
 
