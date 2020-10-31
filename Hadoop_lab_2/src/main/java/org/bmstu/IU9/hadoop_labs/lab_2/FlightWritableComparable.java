@@ -19,8 +19,17 @@ public class FlightWritableComparable implements WritableComparable<FlightWritab
         this.dectairip = dectairip;
     }
 
+    public int get_flag() {
+        return flag;
+    }
+
     public long get_dectairip() {
         return dectairip;
+    }
+    
+    public FlightWritableComparable(int flag, int dectairip) {
+        this.flag = flag;
+        this.dectairip = dectairip;
     }
 
     public void write(DataOutput out) throws IOException {
